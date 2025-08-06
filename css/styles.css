@@ -22,3 +22,14 @@ a:hover {
 a:active {
     color: #ff7b72;
 }
+
+table,
+tr,
+th,
+td,
+caption {
+    border: 2px solid #6e7681;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
