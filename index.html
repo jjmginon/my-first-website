@@ -24,6 +24,9 @@
                 <li>
                     <a href="#html-experiments">HTML Experiments</a>
                 </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -197,6 +200,135 @@
                         behind each change, especially with the imperative mood format.</dd>
                 </dl>
             </section>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>If you're exploring web development or have feedback on my site, feel free to reach out.</p>
+
+            <form action="http://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="user@mail.com" autocomplete="on"
+                            required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="your secret" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="0987654321"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="decade">Tech Era You're Most Curious About:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="2000"
+                            placeholder="e.g. 1980">
+                    </p>
+                    <p>
+                        <label for="learning-format">Preferred Learning Format:</label>
+                        <select name="learning-format" id="learning-format" multiple size="5">
+                            <optgroup label="Interactive Platforms">
+                                <option value="freeCodeCamp">freeCodeCamp</option>
+                                <option value="Codecademy">Codecademy</option>
+                            </optgroup>
+                            <optgroup label="Documentation & References">
+                                <option value="MDN Web Docs" selected>MDN Web Docs</option>
+                                <option value="W3Schools">W3Schools</option>
+                            </optgroup>
+                            <optgroup label="Video Tutorials">
+                                <option value="Dave Gray YouTube">Dave Gray Teaches Code</option>
+                                <option value="codeManS practice videos">codeManS practice videos</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <!-- <p>
+                        <label for="resource">Preferred Learning Resource:</label>
+                        <input type="text" name="resource" id="resource" list="resource-list"
+                            placeholder="Start typing...">
+                        <datalist id="resource-list">
+                            <option value="MDN Web Docs">
+                            <option value="freeCodeCamp">
+                            <option value="Dave Gray Teaches Code">
+                            <option value="W3Schools">
+                            <option value="Codecademy">
+                            <option value="Other">
+                        </datalist>
+                    </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Preferred Coding Time</legend>
+                    <p>When do you feel most productive while coding?</p>
+                    <p>
+                        <input type="radio" name="coding-time" id="morning" value="morning">
+                        <label for="morning">Morning</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="coding-time" id="afternoon" value="afternoon">
+                        <label for="afternoon">Afternoon</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="coding-time" id="evening" value="evening">
+                        <label for="evening">Evening</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="coding-time" id="late-night" value="late-night">
+                        <label for="late-night">Late Night</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Topics You're Exploring</legend>
+                    <p>Select any areas you're currently learning or interested in:</p>
+                    <p>
+                        <input type="checkbox" name="topics" id="semantic-html" value="semantic-html">
+                        <label for="semantic-html">Semantic HTML</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="topics" id="accessibility" value="accessibility">
+                        <label for="accessibility">Accessibility</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="topics" id="responsive-design" value="responsive-design">
+                        <label for="responsive-design">Responsive Design</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="topics" id="commit-messages" value="commit-messages">
+                        <label for="commit-messages">Commit Message Writing</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="topics" id="forms" value="forms">
+                        <label for="forms">Accessible Forms</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="topics" id="other-topic" value="other-topic">
+                        <label for="other-topic">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Share Your Thoughts</legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Feel free to share your feedback, learning experience, or any questions about web development."></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="http://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
         </article>
     </main>
     <hr>
