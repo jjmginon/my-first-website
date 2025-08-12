@@ -33,3 +33,7 @@ caption {
     border-collapse: collapse;
     padding: 0.5rem;
 }
+
+.elements {
+    color: #7ee787;
+}
