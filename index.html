@@ -12,109 +12,141 @@
 </head>
 
 <body>
-    <h1>My Web Development Journey</h1>
+    <header>
+        <h1>My Web Development Journey</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#getting-started">Getting Started</a>
+                </li>
+                <li>
+                    <a href="#dev-learning">Notes &amp; Resources</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <hr>
+    <main>
+        <article id="getting-started">
+            <h2>Getting Started with HTML</h2>
+            <p>Welcome to my first website.</p>
+            <section>
+                <h3>Semantic Structure and First Markup Example</h3>
+                <img src="img/html5-logo-300x300.png" alt="HTML5 logo"
+                    title="HTML5 — the foundation of semantic web structure" width="300" height="300">
+                <figure>
+                    <figcaption>Getting started with semantic HTML in my first site build</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <h3>Outline of My Daily Workflow</h3>
+                <p>The following steps outline my approach to daily development practice:</p>
+                <ol>
+                    <li>...I study web development fundamentals, starting with HTML tags and semantic structure.</li>
+                    <li>...I plan focused learning sessions to balance exploration with consistent progress.</li>
+                    <li>...I reference resources like <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.org/">MDN</a>
+                        </abbr> to deepen my understanding.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>How do I structure my <mark>coding hours</mark> each day?</summary>
+                        <p>
+                            My first session begins at <time datetime="10:00">10 AM</time>, where I focus on markup
+                            refinement and documentation for <time datetime="PT1H">1 hour</time>. I resume at <time
+                                datetime="21:00">9 PM</time> for another <time datetime="PT1H">1 hour</time>, applying
+                            concepts through hands-on practice. That totals <time datetime="PT2H">2 hours</time> of
+                            deliberate coding each day.
+                        </p>
+                    </details>
+                </aside>
+            </section>
+        </article>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="#getting-started">Getting Started</a>
-            </li>
-            <li>
-                <a href="#dev-learning">Notes &amp; Resources</a>
-            </li>
-        </ul>
-    </nav>
+        <hr>
 
-    <hr>
-
-    <section id="getting-started">
-        <h2>Getting Started with HTML</h2>
-        <p>Welcome to my first website.</p>
-        <img src="img/html5-logo-300x300.png" alt="HTML5 logo" title="HTML5 — the foundation of semantic web structure"
-            width="300" height="300">
-        <figure>
-            <figcaption>Getting started with semantic HTML in my first site build</figcaption>
-            <p>
-                <code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code>
+        <article id="dev-learning">
+            <h2>Development Notes and Learning Resources</h2>
+            <p>I'm focused on mastering web development fundamentals. This site documents what I learn, how I apply it,
+                and
+                <em>how I refine my skills through practice</em>.
             </p>
-        </figure>
-        <h3>Outline of My Daily Workflow</h3>
-        <p>The following steps outline my approach to daily development practice:</p>
-        <ol>
-            <li>...I study web development fundamentals, starting with HTML tags and semantic structure.</li>
-            <li>...I plan focused learning sessions to balance exploration with consistent progress.</li>
-            <li>...I reference resources like <abbr title="Mozilla Developer Network">
-                    <a href="https://developer.mozilla.org/">MDN</a>
-                </abbr> to deepen my understanding.</li>
-        </ol>
-    </section>
+            <p>Currently, I'm exploring how different tags behave. I review <abbr
+                    title="HyperText Markup Language">HTML</abbr>
+                tutorials and experiment during quiet hours to stay focused.</p>
 
+            <section>
+                <h3>Resources That Shape My Workflow</h3>
+                <ul>
+                    <li>
+                        <p>Dave Gray's tutorials simplify complex topics into clear, actionable steps that make learning
+                            feel
+                            approachable and practical.</p>
+                        <figure>
+                            <img src="img/davegrayteachescode-400x225.png"
+                                alt="Screenshot of Dave Gray's YouTube channel"
+                                title="Web development tutorials by Dave Gray" width="400" height="225" loading="lazy">
+                            <figcaption>
+                                Dave Gray simplifies complex topics into approachable coding tutorials
+                            </figcaption>
+
+                        </figure>
+                    </li>
+                    <li>
+                        <p>freeCodeCamp offers structured challenges that keep me engaged and focused on building
+                            real-world
+                            skills.
+                            To support their mission, donations by check can be sent to:</p>
+                        <address>
+                            freeCodeCamp, Inc.<br>
+                            3905 Hedgcoxe Rd<br>
+                            PO Box 250352<br>
+                            Plano, TX 75025
+                        </address>
+                        <figure>
+                            <img src="img/fcc-logo-indigo-400x267.png" alt="freeCodeCamp logo"
+                                title="freeCodeCamp — learn to code for free" width="400" height="267" loading="lazy">
+                            <figcaption>freeCodeCamp offers structured challenges that build real-world coding skills
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <!-- TODO: Add more resources -->
+            </section>
+            <section>
+                <h3>Key Challenges and Concepts I'm Practicing</h3>
+                <dl>
+                    <dt>Head Elements</dt>
+                    <dd>Setting up metadata, titles, and essential page info for browsers and search engines.</dd>
+
+                    <dt>Text Basics</dt>
+                    <dd>Using headings, paragraphs, and emphasis to create clear, readable content. <strong>Progress
+                            over
+                            perfection</strong>.</dd>
+
+                    <dt>List Types</dt>
+                    <dd>Choosing between unordered, ordered, and description lists to structure information
+                        meaningfully.
+                    </dd>
+                </dl>
+                <!-- TODO: Add more challenges -->
+            </section>
+        </article>
+    </main>
     <hr>
-
-    <section id="dev-learning">
-        <h2>Development Notes and Learning Resources</h2>
-        <p>I'm focused on mastering web development fundamentals. This site documents what I learn, how I apply it, and
-            <em>how I refine my skills through practice</em>.
+    <footer>
+        <p>
+            &#x1F4BB; &copy; <a href="about.html">JJ Ginon</a> &#x1F4BB;
         </p>
-        <p>Currently, I'm exploring how different tags behave. I review <abbr
-                title="HyperText Markup Language">HTML</abbr>
-            tutorials and experiment during quiet hours to stay focused.</p>
-
-        <h3>Resources That Shape My Workflow</h3>
-        <ul>
-            <li>
-                <p>Dave Gray's tutorials simplify complex topics into clear, actionable steps that make learning feel
-                    approachable and practical.</p>
-                <figure>
-                    <img src="img/davegrayteachescode-400x225.png" alt="Screenshot of Dave Gray's YouTube channel"
-                        title="Web development tutorials by Dave Gray" width="400" height="225" loading="lazy">
-                    <figcaption>
-                        Dave Gray simplifies complex topics into approachable coding tutorials
-                    </figcaption>
-
-                </figure>
-            </li>
-            <li>
-                <p>freeCodeCamp offers structured challenges that keep me engaged and focused on building real-world
-                    skills.
-                    To support their mission, donations by check can be sent to:</p>
-                <address>
-                    freeCodeCamp, Inc.<br>
-                    3905 Hedgcoxe Rd<br>
-                    PO Box 250352<br>
-                    Plano, TX 75025
-                </address>
-                <figure>
-                    <img src="img/fcc-logo-indigo-400x267.png" alt="freeCodeCamp logo"
-                        title="freeCodeCamp — learn to code for free" width="400" height="267" loading="lazy">
-                    <figcaption>freeCodeCamp offers structured challenges that build real-world coding skills
-                    </figcaption>
-                </figure>
-
-            </li>
-        </ul>
-        <!-- TODO: Add more challenges -->
-        <h3>Key Challenges and Concepts I'm Practicing</h3>
-        <dl>
-            <dt>Head Elements</dt>
-            <dd>Setting up metadata, titles, and essential page info for browsers and search engines.</dd>
-
-            <dt>Text Basics</dt>
-            <dd>Using headings, paragraphs, and emphasis to create clear, readable content. <strong>Progress over
-                    perfection</strong>.</dd>
-
-            <dt>List Types</dt>
-            <dd>Choosing between unordered, ordered, and description lists to structure information meaningfully.</dd>
-        </dl>
-    </section>
-
-    <hr>
-    &#x1F4BB; &copy; <a href="about.html">JJ Ginon</a> &#x1F4BB;
-    <p>
-        <a href="#">Back to Top</a>
-    </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
 </body>
 
 </html>
