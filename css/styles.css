@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #0d1117;
+    background: #0d1117;
     color: #e6edf3;
 }
 
@@ -23,11 +23,16 @@ a:visited {
 }
 
 a:hover {
-    color: #7ee787;
+    color: #56d364;
 }
 
 a:active {
-    color: #ff7b72;
+    color: #ffa198;
+}
+
+mark {
+    background: hsl(28, 100%, 67%, 0.5);
+    color: #e6edf3;
 }
 
 table,
@@ -39,4 +44,8 @@ caption {
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
     padding: 0.5rem;
+}
+
+.tag {
+    color: #7ee787;
 }
