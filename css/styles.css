@@ -93,6 +93,8 @@ abbr {
 }
 
 mark {
+    display: inline-block;
+    padding: 0.2rem;
     background: hsla(128, 49%, 49%, 0.5);
     color: #e6edf3;
 }
