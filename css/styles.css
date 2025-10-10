@@ -22,15 +22,12 @@ select {
     font: inherit;
 }
 
-header,
-footer {
-    padding: 1rem;
-}
-
 header {
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 1rem;
+    border: 1px solid #30363d;
     background-color: #161b22;
 }
 
@@ -80,14 +77,18 @@ h3 {
     scroll-margin-top: 8rem;
 }
 
-ul,
-ol,
-dl {
+figure {
+    margin-bottom: 1rem;
+}
+
+main ul,
+main ol,
+main dl {
     margin-top: 0.75rem;
     line-height: 1.5;
 }
 
-p {
+main p {
     margin: 0.75rem 0;
     line-height: 1.5;
 }
@@ -105,7 +106,9 @@ h3 {
 }
 
 main {
-    padding: 0 1rem;
+    padding: 1rem;
+    border-left: 1px solid #30363d;
+    border-right: 1px solid #30363d;
 }
 
 code {
@@ -186,10 +189,12 @@ footer {
     position: sticky;
     bottom: 0;
     z-index: 1;
+    padding: 0.5rem;
+    border: 1px solid #30363d;
     background-color: #161b22;
 }
 
 footer p {
-    margin: 0;
+    margin: 0.5rem;
     text-align: center;
 }
