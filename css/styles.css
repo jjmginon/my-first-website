@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     min-height: 100vh;
     max-width: 720px;
@@ -81,6 +87,10 @@ figure {
     margin-bottom: 1rem;
 }
 
+figcaption {
+    text-align: center;
+}
+
 main ul,
 main ol,
 main dl {
@@ -111,6 +121,15 @@ main {
     border-right: 1px solid #30363d;
 }
 
+.html5-logo {
+    margin: 0 auto 1rem;
+    width: 60%;
+}
+
+.code-snippet {
+    text-align: center;
+}
+
 code {
     font-size: 1rem;
 }
@@ -121,7 +140,7 @@ code {
 
 main ol,
 main ul {
-    padding-left: 2.5rem;
+    padding: 0 2.5rem;
 }
 
 mark {
@@ -222,10 +241,20 @@ tr {
     border-bottom-left-radius: 4px;
 }
 
+.dave-gray-scrnshot {
+    margin: 0 auto;
+    width: 80%;
+}
+
 address {
     margin: 0.5rem 0;
     text-align: center;
     font-family: "Inconsolata", monospace;
+}
+
+.fcc-logo {
+    margin: 0 auto;
+    width: 80%;
 }
 
 dt {
