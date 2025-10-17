@@ -291,6 +291,24 @@ fieldset textarea {
     margin-top: 0.75rem;
 }
 
+.button-container {
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 0;
+    border: none;
+    justify-content: space-evenly;
+}
+
+.button-container legend {
+    display: none;
+}
+
+.button-container button {
+    padding: 0.25rem 5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 footer {
     position: sticky;
     bottom: 0;
