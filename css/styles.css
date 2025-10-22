@@ -140,6 +140,7 @@ code {
 
 main ol,
 main ul {
+    margin-bottom: 1rem;
     padding: 0 2.5rem;
 }
 
@@ -152,6 +153,10 @@ mark {
 
 abbr {
     font-weight: 500;
+}
+
+summary {
+    cursor: pointer;
 }
 
 .my-daily-workflow {
@@ -288,6 +293,12 @@ fieldset select {
     margin: 0.75rem 0 0 0.75rem;
 }
 
+select option {
+    cursor: pointer;
+}
+
+
+
 fieldset textarea {
     margin-top: 0.75rem;
     width: 100%;
@@ -296,7 +307,7 @@ fieldset textarea {
 
 .button-container {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0;
     border: none;
     justify-content: space-evenly;
