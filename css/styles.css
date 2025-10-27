@@ -122,8 +122,12 @@ main {
 }
 
 .html5-logo {
-    margin: 0 auto 1rem;
+    margin: 0 auto;
     width: 60%;
+}
+
+figcaption {
+    margin-top: 1rem;
 }
 
 .code-snippet {
