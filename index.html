@@ -13,43 +13,43 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>My Web Development Journey</h1>
 
-        <nav>
-            <ul>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li>
-                    <a href="#getting-started">Start</a>
+                    <a class="header__a" href="#getting-started">Start</a>
                 </li>
                 <li>
-                    <a href="#dev-learning">Resources</a>
+                    <a class="header__a" href="#dev-learning">Resources</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a class="header__a" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <article id="getting-started">
+    <main class="main">
+        <article class="main__article" id="getting-started">
             <h2>Getting Started with HTML</h2>
-            <p class="center">Welcome to my first website.</p>
+            <p class="main__p center">Welcome to my first website.</p>
             <section>
                 <h3>Semantic Structure and First Markup Example</h3>
                 <img class="html5-logo" src="img/html5-logo-600x600.png" alt="HTML5 logo"
                     title="HTML5 — the foundation of semantic web structure" width="600" height="600">
-                <figure>
-                    <figcaption>One of the first semantic HTML tags I wrote</figcaption>
-                    <p class="code-snippet">
+                <figure class="main__figure">
+                    <figcaption class="main__figcaption">One of the first semantic HTML tags I wrote</figcaption>
+                    <p class="main__p code-snippet">
                         <code>&lt;<span class="tag">h1</span>&gt;Hello, World!&lt;/<span class="tag">h1</span>&gt;</code>
                     </p>
                 </figure>
             </section>
             <section>
                 <h3>Outline of My Daily Workflow</h3>
-                <p>The following steps outline my approach to daily development practice:</p>
-                <ol>
+                <p class="main__p">The following steps outline my approach to daily development practice:</p>
+                <ol class="main__ol">
                     <li>...I study web development fundamentals, starting with HTML tags and semantic structure.</li>
                     <li>...I plan focused learning sessions to balance exploration with consistent progress.</li>
                     <li>...I reference resources like <abbr title="Mozilla Developer Network">
@@ -59,7 +59,7 @@
                 <aside>
                     <details>
                         <summary>How do I structure my <mark>coding hours</mark> each day?</summary>
-                        <p>
+                        <p class="main__p">
                             My first session begins at <time datetime="10:00">10 AM</time>, where I focus on markup
                             refinement and documentation for <time datetime="PT1H">1 hour</time>. I resume at <time
                                 datetime="21:00">9 PM</time> for another <time datetime="PT1H">1 hour</time>, applying
@@ -69,60 +69,67 @@
                     </details>
                 </aside>
                 <br>
-                <table class="my-daily-workflow">
-                    <caption class="wf-item wf-caption">My Daily Workflow</caption>
+                <table class="workflow__container">
+                    <caption class="workflow__item workflow__caption">My Daily Workflow</caption>
                     <thead>
                         <tr>
-                            <th scope="col" class="wf-header">Period</th>
-                            <th scope="col" class="wf-header">Time</th>
-                            <th scope="col" class="wf-header">Focus</th>
+                            <th scope="col" class="workflow__header">Period</th>
+                            <th scope="col" class="workflow__header">Time</th>
+                            <th scope="col" class="workflow__header">Focus</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" rowspan="2" class="wf-item wf-mor">Morning</th>
-                            <td class="wf-item"><time datetime="06:00">6:00 AM</time>&ndash;<time datetime="10:00">10:00
+                            <th scope="row" rowspan="2" class="workflow__item workflow__mor">Morning</th>
+                            <td class="workflow__item"><time datetime="06:00">6:00 AM</time>&ndash;<time
+                                    datetime="10:00">10:00
                                     AM</time></td>
-                            <td class="wf-item">Morning Routine</td>
+                            <td class="workflow__item">Morning Routine</td>
                         </tr>
                         <tr>
-                            <td class="wf-item"><time datetime="10:00">10:00 AM</time>&ndash;<time
+                            <td class="workflow__item"><time datetime="10:00">10:00 AM</time>&ndash;<time
                                     datetime="11:00">11:00 AM</time></td>
-                            <td class="wf-item">Morning Coding Session</td>
+                            <td class="workflow__item">Morning Coding Session</td>
                         </tr>
                         <tr>
-                            <th scope="row" class="wf-item wf-mid">Midday</th>
-                            <td class="wf-item"><time datetime="11:00">11:00 AM</time>&ndash;<time datetime="13:00">1:00
+                            <th scope="row" class="workflow__item workflow__mid">Midday</th>
+                            <td class="workflow__item"><time datetime="11:00">11:00 AM</time>&ndash;<time
+                                    datetime="13:00">1:00
                                     PM</time></td>
-                            <td class="wf-item">Lunch Break and Rest</td>
+                            <td class="workflow__item">Lunch Break and Rest</td>
                         </tr>
                         <tr>
-                            <th scope="row" class="wf-item wf-aft">Afternoon</th>
-                            <td class="wf-item"><time datetime="13:00">1:00 PM</time>&ndash;<time datetime="20:00">8:00
+                            <th scope="row" class="workflow__item workflow__aft">Afternoon</th>
+                            <td class="workflow__item"><time datetime="13:00">1:00 PM</time>&ndash;<time
+                                    datetime="20:00">8:00
                                     PM</time></td>
-                            <td class="wf-item">Part-time Work</td>
+                            <td class="workflow__item">Part-time Work</td>
                         </tr>
                         <tr>
-                            <th scope="row" rowspan="2" class="wf-item wf-eve">Evening</th>
-                            <td class="wf-item"><time datetime="20:00">8:00 PM</time>&ndash;<time datetime="21:00">9:00
+                            <th scope="row" rowspan="2" class="workflow__item workflow__eve">Evening</th>
+                            <td class="workflow__item"><time datetime="20:00">8:00 PM</time>&ndash;<time
+                                    datetime="21:00">9:00
                                     PM</time></td>
-                            <td class="wf-item">Dinner Time</td>
+                            <td class="workflow__item">Dinner Time</td>
                         </tr>
                         <tr>
-                            <td class="wf-item"><time datetime="21:00">9:00 PM</time>&ndash;<time datetime="22:00">10:00
+                            <td class="workflow__item"><time datetime="21:00">9:00 PM</time>&ndash;<time
+                                    datetime="22:00">10:00
                                     PM</time></td>
-                            <td class="wf-item">Evening Coding Session</td>
+                            <td class="workflow__item">Evening Coding Session</td>
                         </tr>
                         <tr>
-                            <th scope="row" class="wf-item wf-nit">Night</th>
-                            <td class="wf-item"><time datetime="22:00">10:00 PM</time>&ndash;<time datetime="06:00">6:00
+                            <th scope="row" class="workflow__item workflow__nit">Night</th>
+                            <td class="workflow__item"><time datetime="22:00">10:00 PM</time>&ndash;<time
+                                    datetime="06:00">6:00
                                     AM</time></td>
-                            <td class="wf-item">Free Time and Sleep</td>
+                            <td class="workflow__item">Free Time and Sleep</td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="3" class="wf-item wf-footer">Schedule balances coding, study, and recovery to
+                            <td colspan="3" class="workflow__item workflow__footer">Schedule balances coding, study, and
+                                recovery to
                                 maintain consistent
                                 progress.</td>
                         </tr>
@@ -133,13 +140,14 @@
 
         <hr>
 
-        <article id="dev-learning">
+        <article class="main__article learning" id="dev-learning">
             <h2>Development Notes and Learning Resources</h2>
-            <p>I'm focused on mastering web development fundamentals. This site documents what I learn, how I apply it,
+            <p class="main__p">I'm focused on mastering web development fundamentals. This site documents what I learn,
+                how I apply it,
                 and
                 <em>how I refine my skills through practice</em>.
             </p>
-            <p>
+            <p class="main__p">
                 Currently, I'm exploring how different HTML tags and CSS properties behave. I review <abbr
                     title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>
                 tutorials, then experiment during quiet hours to stay focused and reinforce what I learn.
@@ -147,23 +155,25 @@
 
             <section>
                 <h3>Resources That Shape My Workflow</h3>
-                <ul>
+                <ul class="main__ul">
                     <li>
-                        <p>Dave Gray's tutorials simplify complex topics into clear, actionable steps that make learning
+                        <p class="main__p">Dave Gray's tutorials simplify complex topics into clear, actionable steps
+                            that make learning
                             feel
                             approachable and practical.</p>
-                        <figure>
+                        <figure class="main__figure">
                             <img class="dave-gray-scrnshot" src="img/davegrayteachescode-1563x879.png"
                                 alt="Screenshot of Dave Gray's YouTube channel"
                                 title="Web development tutorials by Dave Gray" width="1563" height="879" loading="lazy">
-                            <figcaption>
+                            <figcaption class="main__figcaption">
                                 Dave Gray simplifies complex topics into approachable coding tutorials
                             </figcaption>
 
                         </figure>
                     </li>
                     <li>
-                        <p>freeCodeCamp offers structured challenges that keep me engaged and focused on building
+                        <p class="main__p">freeCodeCamp offers structured challenges that keep me engaged and focused on
+                            building
                             real-world
                             skills.
                             To support their mission, donations by check can be sent to:</p>
@@ -173,10 +183,11 @@
                             PO Box 250352<br>
                             Plano, TX 75025
                         </address>
-                        <figure>
+                        <figure class="main__figure">
                             <img class="fcc-logo" src="img/fcc-logo-indigo-1920x1281.png" alt="freeCodeCamp logo"
                                 title="freeCodeCamp — learn to code for free" width="1920" height="1281" loading="lazy">
-                            <figcaption>freeCodeCamp offers structured challenges that build real-world coding skills
+                            <figcaption class="main__figcaption">freeCodeCamp offers structured challenges that build
+                                real-world coding skills
                             </figcaption>
                         </figure>
                     </li>
@@ -185,7 +196,7 @@
             </section>
             <section>
                 <h3>Key Challenges and Concepts I'm Practicing</h3>
-                <dl>
+                <dl class="main__dl">
                     <dt>Head Elements</dt>
                     <dd>Setting up metadata, titles, and essential page info for browsers and search engines.</dd>
 
@@ -214,117 +225,122 @@
 
         <hr>
 
-        <article id="contact">
+        <article class="main__article contact" id="contact">
             <h2>Submit a Learning Insight</h2>
-            <p>If you've refined a markup pattern, discovered a semantic nuance, or want to suggest improvements to this
+            <p class="main__p">If you've refined a markup pattern, discovered a semantic nuance, or want to suggest
+                improvements to this
                 archive, use the form below.</p>
 
-            <form action="https://httpbin.org/get" method="get">
-                <fieldset>
-                    <legend>Contributor Identity</legend>
-                    <p>
-                        <label for="name">Name (for attribution): </label>
-                        <input type="text" name="name" id="name" placeholder="e.g., John Smith or Jane Smith"
-                            autocomplete="on" required>
+            <form class="contact__form" action="https://httpbin.org/get" method="get">
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Contributor Identity</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name (for attribution): </label>
+                        <input class="contact__input" type="text" name="name" id="name"
+                            placeholder="e.g., John Smith or Jane Smith" autocomplete="on" required>
                     </p>
-                    <p>
-                        <label for="password">Submission Key: </label>
-                        <input type="password" name="password" id="password" placeholder="Enter your submission key"
-                            required>
+                    <p class="contact__p">
+                        <label class="contact__label" for="password">Submission Key: </label>
+                        <input class="contact__input" type="password" name="password" id="password"
+                            placeholder="Enter your submission key" required>
                     </p>
-                    <p>
-                        <label for="phone">Contact (for markup follow-up): </label>
-                        <input type="tel" name="phone" id="phone" placeholder="e.g., 0123456789" pattern="[0-9]{10}"
-                            required>
+                    <p class="contact__p">
+                        <label class="contact__label" for="phone">Contact (for markup follow-up): </label>
+                        <input class="contact__input" type="tel" name="phone" id="phone" placeholder="e.g., 0123456789"
+                            pattern="[0-9]{10}" required>
                     </p>
-                    <p>
-                        <label for="year">Year You First Wrote HTML: </label>
-                        <input type="number" name="year" id="year" min="1991" max="2025" step="1" value="2006">
+                    <p class="contact__p">
+                        <label class="contact__label" for="year">Year You First Wrote HTML: </label>
+                        <input class="contact__input" type="number" name="year" id="year" min="1991" max="2025" step="1"
+                            value="2006">
                     </p>
-                    <p>
-                        <label for="topics">Topics You're Most Interested In: </label>
-                        <select name="topics" id="topics" multiple size="5">
+                    <p class="contact__p">
+                        <label class="contact__label" for="topics">Topics You're Most Interested In: </label>
+                        <select class="contact__select" name="topics" id="topics" multiple size="5">
                             <optgroup label="Markup">
-                                <option value="semantic-html">Semantic HTML</option>
-                                <option value="accessibility">Accessibility</option>
+                                <option class="contact__option" value="semantic-html">Semantic HTML</option>
+                                <option class="contact__option" value="accessibility">Accessibility</option>
                             </optgroup>
                             <optgroup label="Workflow">
-                                <option value="daily-routines">Daily Routines</option>
-                                <option value="commit-messages">Commit Message Conventions</option>
-                                <option value="figure-caption">Figure/Caption Patterns</option>
+                                <option class="contact__option" value="daily-routines">Daily Routines</option>
+                                <option class="contact__option" value="commit-messages">Commit Message Conventions
+                                </option>
+                                <option class="contact__option" value="figure-caption">Figure/Caption Patterns</option>
                             </optgroup>
-                            <option value="other">Other</option>
+                            <option class="contact__option" value="other">Other</option>
                         </select>
                     </p>
-                    <!-- <p>
-                        <label for="topics">Topic You're Most Interested In:</label>
-                        <input type="text" name="topics" id="topics" list="topics-list"
+                    <!-- <p class="contact__p">
+                        <label class="contact__label" for="topics">Topic You're Most Interested In:</label>
+                        <input class="contact__input" type="text" name="topics" id="topics" list="topics-list"
                             placeholder="Start typing a topic…" required>
                         <datalist id="topics-list">
-                            <option value="Semantic HTML">
-                            <option value="Accessibility">
-                            <option value="Daily Routines">
-                            <option value="Commit Message Conventions">
-                            <option value="Figure/Caption Patterns">
-                            <option value="Other">
+                            <option class="contact__option" value="Semantic HTML">
+                            <option class="contact__option" value="Accessibility">
+                            <option class="contact__option" value="Daily Routines">
+                            <option class="contact__option" value="Commit Message Conventions">
+                            <option class="contact__option" value="Figure/Caption Patterns">
+                            <option class="contact__option" value="Other">
                         </datalist>
                     </p> -->
                 </fieldset>
-                <fieldset>
-                    <legend>Learning Style</legend>
-                    <p>
-                        <input type="radio" name="learningStyle" id="structured" value="structured">
-                        <label for="structured"> Structured Tutorials</label>
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Learning Style</legend>
+                    <p class="contact__p">
+                        <input class="contact__input" type="radio" name="learningStyle" id="structured"
+                            value="structured">
+                        <label class="contact__label" for="structured"> Structured Tutorials</label>
                     </p>
-                    <p>
-                        <input type="radio" name="learningStyle" id="hands-on" value="hands-on">
-                        <label for="hands-on"> Hands-On Practice</label>
+                    <p class="contact__p">
+                        <input class="contact__input" type="radio" name="learningStyle" id="hands-on" value="hands-on">
+                        <label class="contact__label" for="hands-on"> Hands-On Practice</label>
                     </p>
-                    <p>
-                        <input type="radio" name="learningStyle" id="other" value="other">
-                        <label for="other"> Other</label>
-                    </p>
-                </fieldset>
-                <fieldset>
-                    <legend>Tools You Use</legend>
-                    <p>
-                        <input type="checkbox" name="tools" id="vs-code" value="vs-code">
-                        <label for="vs-code"> VS Code</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="tools" id="w3cvalidation" value="w3cvalidation">
-                        <label for="w3cvalidation"> The W3C Markup Validation Sevice</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="tools" id="mscopilot" value="mscopilot">
-                        <label for="mscopilot"> Microsoft Copilot</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="tools" id="otherTools" value="otherTools">
-                        <label for="otherTools"> Other</label>
+                    <p class="contact__p">
+                        <input class="contact__input" type="radio" name="learningStyle" id="other" value="other">
+                        <label class="contact__label" for="other"> Other</label>
                     </p>
                 </fieldset>
-                <fieldset>
-                    <legend>Your Learning Insight</legend>
-                    <label for="message">What would you like to share? </label>
-                    <textarea name="message" id="message" cols="30" rows="10"
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Tools You Use</legend>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="tools" id="vs-code" value="vs-code">
+                        <label class="contact__label" for="vs-code"> VS Code</label>
+                    </p>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="tools" id="w3cvalidation"
+                            value="w3cvalidation">
+                        <label class="contact__label" for="w3cvalidation"> The W3C Markup Validation Sevice</label>
+                    </p>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="tools" id="mscopilot" value="mscopilot">
+                        <label class="contact__label" for="mscopilot"> Microsoft Copilot</label>
+                    </p>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="tools" id="otherTools" value="otherTools">
+                        <label class="contact__label" for="otherTools"> Other</label>
+                    </p>
+                </fieldset>
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Your Learning Insight</legend>
+                    <label class="contact__label" for="message">What would you like to share? </label>
+                    <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
                         placeholder="e.g., I use &lt;figure&gt; with scoped &lt;figcaption&gt; to clarify visual context..."></textarea>
                 </fieldset>
-                <fieldset class="button-container">
-                    <legend>Form actions</legend>
+                <fieldset class="contact__fieldset button-container">
+                    <legend class="contact__legend offscreen">Form actions</legend>
                     <button type="submit">Submit</button>
                     <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
                     <button type="reset">Reset</button>
                 </fieldset>
             </form>
         </article>
-        <p class="center">
+        <p class="main__p center">
             <a href="#">Back to Top</a>
         </p>
     </main>
 
-    <footer>
-        <p>
+    <footer class="footer">
+        <p class="footer__p">
             &#x1F4BB; &copy; <a href="about.html">JJ Ginon</a> &#x1F4BB;
         </p>
     </footer>
