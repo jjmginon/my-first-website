@@ -27,6 +27,7 @@ select {
     /* FONTS */
     --FF: "Roboto", sans-serif;
     --FF-HEADINGS: "Inconsolata", monospace;
+    --FF-LINKS: "Inconsolata", monospace;
     --FS: 1rem;
 
     /* COLOR */
@@ -79,15 +80,14 @@ body {
 h1,
 h2,
 h3 {
-    margin-bottom: 1rem;
     font-family: var(--FF-HEADINGS);
     font-weight: 900;
     text-align: center;
 }
 
-h1 {
-    font-size: 2.125rem;
-    animation: fadeIn var(--ANIM-DURATION) var(--ANIM-TIMING-FN);
+h2,
+h3 {
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -157,10 +157,24 @@ dd {
     position: sticky;
     top: 0;
     z-index: 1;
-    padding: 1rem;
     border: var(--BORDERS);
+    font-family: var(--FF-LINKS);
+    font-size: 1.25rem;
+    font-weight: 600;
     background-color: var(--HEADER-BGCOLOR);
     animation: slideInDown var(--ANIM-DURATION) var(--ANIM-TIMING-FN);
+}
+
+.header__h1 {
+    padding: 1rem;
+    font-size: 2.125rem;
+    background: var(--BODY-BGCOLOR);
+    animation: fadeIn var(--ANIM-DURATION) var(--ANIM-TIMING-FN);
+}
+
+.header__nav {
+    padding: 0.75rem;
+    background-color: var(--HEADER-BGCOLOR);
 }
 
 .header__ul {
@@ -191,7 +205,7 @@ dd {
 }
 
 .main__article {
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 8.25rem;
 }
 
 .main__p {
@@ -223,7 +237,6 @@ dd {
 
 .html5-logo {
     margin: 0 auto;
-    width: 60%;
 }
 
 .code-snippet {
@@ -323,7 +336,7 @@ tr {
     border-bottom-right-radius: var(--BORDER-RADIUS);
 }
 
-/* || LEARNING */
+/* || RESOURCES */
 
 .dave-gray-scrnshot {
     margin: 0 auto;
@@ -393,10 +406,6 @@ tr {
     border: none;
 }
 
-.button-container legend {
-    display: none;
-}
-
 .button-container button {
     padding: 0.25rem 1.25rem;
     border-radius: var(--BORDER-RADIUS);
@@ -451,8 +460,23 @@ tr {
     }
 }
 
+/* || MOBILE M */
+@media screen and (min-width: 319.99px) {
+    .main__article {
+        scroll-margin-top: 12.75rem;
+    }
+
+    .button-container button {
+        padding: 0.25rem 1.75rem;
+    }
+}
+
 /* || MOBILE L */
 @media screen and (min-width: 374.99px) {
+    .main__article {
+        scroll-margin-top: 10.5rem;
+    }
+
     .button-container button {
         padding: 0.25rem 1.75rem;
     }
@@ -460,6 +484,14 @@ tr {
 
 /* || TABLET S */
 @media screen and (min-width: 539.99px) {
+    .main__article {
+        scroll-margin-top: 8.25rem;
+    }
+
+    .html5-logo {
+        width: 45%;
+    }
+
     .button-container button {
         padding: 0.25rem 3rem;
     }
