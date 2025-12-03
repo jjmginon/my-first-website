@@ -384,6 +384,7 @@ tr {
 }
 
 .contact__select {
+    width: 100%;
     margin: 0;
     padding: 0.5rem;
 }
