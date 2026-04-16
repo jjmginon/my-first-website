@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JJ Ginon">
+    <meta name="description"
+        content="Share your insights, contribute ideas, and connect with me through the contact form.">
+    <title>My Web Development Journey — Contact</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">My Web Development Journey</h1>
+
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a class="header__a" href="/">Home</a>
+                </li>
+                <li>
+                    <a class="header__a" href="/#start">Start</a>
+                </li>
+                <li>
+                    <a class="header__a" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="header__a" href="resources.html">Resources</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="main__article contact" id="contact">
+            <h2 class="contact__h2">Submit a Learning Insight</h2>
+            <p class="main__p">
+                If you've refined a markup pattern, discovered a semantic nuance, or want to suggest improvements to
+                this archive, use the form below.
+            </p>
+
+            <form class="contact__form" action="https://httpbin.org/get" method="get">
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Contributor Identity</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name (for attribution): </label>
+                        <input class="contact__input" type="text" name="name" id="name"
+                            placeholder="e.g., John Smith or Jane Smith" autocomplete="on" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="password">Submission Key: </label>
+                        <input class="contact__input" type="password" name="password" id="password"
+                            placeholder="Enter your submission key" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="phone">Contact (for markup follow-up): </label>
+                        <input class="contact__input" type="tel" name="phone" id="phone" placeholder="e.g., 0123456789"
+                            pattern="[0-9]{10}" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="year">Year You First Wrote HTML: </label>
+                        <input class="contact__input" type="number" name="year" id="year" min="1991" max="2025" step="1"
+                            value="2006">
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="topics">Topics You're Most Interested In: </label>
+                        <select class="contact__select" name="topics" id="topics" multiple size="5">
+                            <optgroup label="Markup">
+                                <option class="contact__option" value="semantic-html">Semantic HTML</option>
+                                <option class="contact__option" value="accessibility">Accessibility</option>
+                            </optgroup>
+                            <optgroup label="Workflow">
+                                <option class="contact__option" value="daily-routines">Daily Routines</option>
+                                <option class="contact__option" value="commit-messages">
+                                    Commit Message Conventions
+                                </option>
+                                <option class="contact__option" value="figure-caption">Figure/Caption Patterns</option>
+                            </optgroup>
+                            <option class="contact__option" value="other">Other</option>
+                        </select>
+                    </p>
+                    <!-- <p class="contact__p">
+                        <label class="contact__label" for="topics">Topic You're Most Interested In:</label>
+                        <input class="contact__input" type="text" name="topics" id="topics" list="topics-list"
+                            placeholder="Start typing a topic…" required>
+                        <datalist id="topics-list">
+                            <option class="contact__option" value="Semantic HTML">
+                            <option class="contact__option" value="Accessibility">
+                            <option class="contact__option" value="Daily Routines">
+                            <option class="contact__option" value="Commit Message Conventions">
+                            <option class="contact__option" value="Figure/Caption Patterns">
+                            <option class="contact__option" value="Other">
+                        </datalist>
+                    </p> -->
+                </fieldset>
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Learning Style</legend>
+                    <p class="contact__p">
+                        <input class="contact__input" type="radio" name="learningStyle" id="structured"
+                            value="structured">
+                        <label class="contact__label" for="structured"> Structured Tutorials</label>
+                    </p>
+                    <p class="contact__p">
+                        <input class="contact__input" type="radio" name="learningStyle" id="hands-on" value="hands-on">
+                        <label class="contact__label" for="hands-on"> Hands-On Practice</label>
+                    </p>
+                    <p class="contact__p">
+                        <input class="contact__input" type="radio" name="learningStyle" id="other" value="other">
+                        <label class="contact__label" for="other"> Other</label>
+                    </p>
+                </fieldset>
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Tools You Use</legend>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="tools" id="vs-code" value="vs-code">
+                        <label class="contact__label" for="vs-code"> VS Code</label>
+                    </p>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="tools" id="w3cvalidation"
+                            value="w3cvalidation">
+                        <label class="contact__label" for="w3cvalidation"> The W3C Markup Validation Sevice</label>
+                    </p>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="tools" id="mscopilot" value="mscopilot">
+                        <label class="contact__label" for="mscopilot"> Microsoft Copilot</label>
+                    </p>
+                    <p class="contact__p">
+                        <input class="contact__input" type="checkbox" name="tools" id="otherTools" value="otherTools">
+                        <label class="contact__label" for="otherTools"> Other</label>
+                    </p>
+                </fieldset>
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Your Learning Insight</legend>
+                    <label class="contact__label" for="message">What would you like to share? </label>
+                    <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
+                        placeholder="e.g., I use &lt;figure&gt; with scoped &lt;figcaption&gt; to clarify visual context..."></textarea>
+                </fieldset>
+                <fieldset class="contact__fieldset button-container">
+                    <legend class="contact__legend offscreen">Form actions</legend>
+                    <button type="submit">Submit</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </article>
+        <p class="main__p center">
+            <a href="#">Back to Top</a>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__p">
+            &#x1F4BB; &copy; <a href="about.html">JJ Ginon</a> &#x1F4BB;
+        </p>
+    </footer>
+</body>
+
+</html>
