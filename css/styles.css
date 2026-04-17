@@ -57,6 +57,10 @@ select {
     left: -10000px;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .center {
     text-align: center;
 }
